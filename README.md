@@ -4,6 +4,23 @@ This repo holds the gauge component that can be uploaded into a BI Tool.
 
 This is meant to be deployed via [Netlify](https://www.netlify.com) or [Vercel](https://www.vercel.com) (as examples) then the URL referenced in the specific BI tool.
 
+## Future Graph Displays
+
+- Add JSX file to Component folder.
+- In App.js, import file at the top.
+- Next add an additional Route within the Routes tag like the below:
+
+  <code><Route path="/gauge2" element={\<GaugeRed value={value} label={label} units={units} />} /></code>
+
+- Path is the URL extension, element is your component, then the properties passed to the component also listed
+  - value={value}
+  - label={label}
+  - units={units}
+- Lastly, if you need to pass more properties then add them in App.js above the App function:
+  ![Props](public/props.png)
+
+<p style='color:yellow;align:center'>________________________________________</p>
+
 ## React Specific Content
 
 ### Getting Started with Create React App
