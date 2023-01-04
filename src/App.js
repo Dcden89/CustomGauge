@@ -1,4 +1,4 @@
-import Gauge from "./components/Gauge.jsx";
+import Gauge from "./Components/Gauge.jsx";
 
 const queryParams = new URLSearchParams(window.location.search);
 const value = queryParams.get("value");
