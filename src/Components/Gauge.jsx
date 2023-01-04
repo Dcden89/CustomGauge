@@ -3,7 +3,7 @@ import { arc } from "d3-shape";
 import { scaleLinear } from "d3-scale";
 import { format } from "d3-format";
 
-const Gauge = ({ value = 50, min = 0, max = 100, label, units }) => {
+const Gauge = ({ value, min = 0, max = 100, label, units }) => {
   const backgroundArc = arc()
     .innerRadius(0.65)
     .outerRadius(1)
